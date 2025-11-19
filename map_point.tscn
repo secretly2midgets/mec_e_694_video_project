@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dya34mque0tet"]
+
+[ext_resource type="Shader" uid="uid://7mqe75y44luw" path="res://map_point.gdshader" id="1_jfx02"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q733i"]
+shader = ExtResource("1_jfx02")
+shader_parameter/colour = Vector4(0, 0, 0, 0)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_c0ia7"]
+
+[node name="map_point" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_q733i")
+offset_right = 10.0
+offset_bottom = 10.0
+texture = SubResource("CanvasTexture_c0ia7")
