@@ -4,3 +4,18 @@
 
 [node name="2d_self_organizing_map" type="Node2D"]
 script = ExtResource("1_7328h")
+
+[node name="box_to_draw_in" type="Line2D" parent="."]
+width = 5.0
+default_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="line_between_map_points" type="Line2D" parent="."]
+width = 5.0
+default_color = Color(0.48568988, 0, 0.14980772, 1)
+
+[node name="arrow" type="Line2D" parent="."]
+width = 3.0
